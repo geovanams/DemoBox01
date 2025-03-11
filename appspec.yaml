@@ -1,0 +1,17 @@
+{
+  "version": 0.0,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:us-east-2:688567266025:task-definition/webapptaskd:6",
+          "LoadBalancerInfo": {
+            "ContainerName": "ecrwebapp-80-tcp",
+            "ContainerPort": 80
+          }
+        }
+      }
+    }
+  ]
+}
